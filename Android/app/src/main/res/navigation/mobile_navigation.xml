@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/popisNavikaFragment">
+
+    <fragment
+        android:id="@+id/popisNavikaFragment"
+        android:name="hr.foi.air.osobnenavike.PopisNavikaFragment"
+        android:label="fragment_popis_navika"
+        tools:layout="@layout/fragment_popis_navika" />
+    <fragment
+        android:id="@+id/obavljeneNavikeFragment"
+        android:name="hr.foi.air.osobnenavike.ObavljeneNavikeFragment"
+        android:label="fragment_obavljene_navike"
+        tools:layout="@layout/fragment_obavljene_navike" />
+    <fragment
+        android:id="@+id/statistikaFragment"
+        android:name="hr.foi.air.osobnenavike.StatistikaFragment"
+        android:label="fragment_statistika"
+        tools:layout="@layout/fragment_statistika" />
+</navigation>
