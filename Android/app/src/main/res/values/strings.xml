@@ -2,4 +2,8 @@
     <string name="app_name">OsobneNavike</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navika_naziv">Naziv navika</string>
+    <string name="navika_tip">Tip navike</string>
+    <string name="btn_dodaj">Dodaj</string>
 </resources>

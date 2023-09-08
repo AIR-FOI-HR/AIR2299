@@ -7,17 +7,38 @@
 
     <fragment
         android:id="@+id/popisNavikaFragment"
-        android:name="hr.foi.air.osobnenavike.PopisNavikaFragment"
+        android:name="hr.foi.air.osobnenavike.fragments.PopisNavikaFragment"
         android:label="fragment_popis_navika"
-        tools:layout="@layout/fragment_popis_navika" />
+        tools:layout="@layout/fragment_popis_navika" >
+        <action
+            android:id="@+id/action_popisNavikaFragment_to_obavljeneNavikeFragment"
+            app:destination="@id/obavljeneNavikeFragment" />
+        <action
+            android:id="@+id/action_popisNavikaFragment_to_statistikaFragment"
+            app:destination="@id/statistikaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/obavljeneNavikeFragment"
-        android:name="hr.foi.air.osobnenavike.ObavljeneNavikeFragment"
+        android:name="hr.foi.air.osobnenavike.fragments.ObavljeneNavikeFragment"
         android:label="fragment_obavljene_navike"
-        tools:layout="@layout/fragment_obavljene_navike" />
+        tools:layout="@layout/fragment_obavljene_navike" >
+        <action
+            android:id="@+id/action_obavljeneNavikeFragment_to_popisNavikaFragment"
+            app:destination="@id/popisNavikaFragment" />
+        <action
+            android:id="@+id/action_obavljeneNavikeFragment_to_statistikaFragment"
+            app:destination="@id/statistikaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/statistikaFragment"
-        android:name="hr.foi.air.osobnenavike.StatistikaFragment"
+        android:name="hr.foi.air.osobnenavike.fragments.StatistikaFragment"
         android:label="fragment_statistika"
-        tools:layout="@layout/fragment_statistika" />
+        tools:layout="@layout/fragment_statistika" >
+        <action
+            android:id="@+id/action_statistikaFragment_to_obavljeneNavikeFragment"
+            app:destination="@id/obavljeneNavikeFragment" />
+        <action
+            android:id="@+id/action_statistikaFragment_to_popisNavikaFragment"
+            app:destination="@id/popisNavikaFragment" />
+    </fragment>
 </navigation>
