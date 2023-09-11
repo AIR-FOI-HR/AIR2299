@@ -9,7 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class NavikeViewModel(application: Application): AndroidViewModel(application) {
-    private val listaNavika: LiveData<List<Navike>>
+    val listaNavika: LiveData<List<Navike>>
     private val repository: NavikeRepository
 
     init {

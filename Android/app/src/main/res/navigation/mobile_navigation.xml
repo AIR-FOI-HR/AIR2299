@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_popisNavikaFragment_to_statistikaFragment"
             app:destination="@id/statistikaFragment" />
+        <argument
+            android:name="izabranaNavika"
+            app:argType="hr.foi.air.osobnenavike.data.Navike" />
     </fragment>
     <fragment
         android:id="@+id/obavljeneNavikeFragment"

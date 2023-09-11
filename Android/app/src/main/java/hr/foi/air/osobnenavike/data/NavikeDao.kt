@@ -13,6 +13,6 @@ interface NavikeDao{
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun dodajNaviku (navike: Navike)
 
-    @Query(value = "SELECT * FROM navike_tablica ORDER BY id ASC")
+    @Query("SELECT * FROM navike_tablica ORDER BY id ASC")
     fun listaNavika():LiveData<List<Navike>>
 }
